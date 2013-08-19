@@ -10,11 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char *dest, char *src);
-
-char *s = src, *d = dest;
+char *ft_strcpy(char *dest, char *src)
 {
-    while (*s != 0)
+	char *s = src, *d = dest;
+	while (*s != 0)
 	{
 		*d = *s;
 		s++;
@@ -28,7 +27,7 @@ void printstr(char *c)
 {
 	while (*c != 0)
 	{
-		putchar(c);
+		ft_putchar(c);
 		c++;
 	}
 }
@@ -36,6 +35,6 @@ void printstr(char *c)
 int main(void)
 {
 	char buffer[10];
-	strcpy(buffer, "Vive 42!");
-	printf(buffer);
+	ft_strcpy(buffer, "Vive 42!");
+	printstr(buffer);
 }
